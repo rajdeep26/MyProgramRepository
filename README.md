@@ -26,3 +26,5 @@ Code folding
 Multiple cursors and selections
 Live syntax checker (currently JavaScript/CoffeeScript/CSS/XQuery)
 Cut, copy, and paste functionality
+
+A MySQL backup file is added, so that the user can directly have some programs in his repository.
