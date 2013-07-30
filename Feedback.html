@@ -66,7 +66,6 @@
                 </li>
                 <li><a href="ShowPrograms.php" >Programs</a></li>
                 <li><a href="AddProgram.php" >Add Programs</a></li>
-                <li><a href="Feedback.html" >Feedback</a></li>
               </ul>
             </div>
           </div>
@@ -76,40 +75,25 @@
       <br><br>
     <div class="container">
       <div class="row-fluid">
-        <a href="ShowPrograms.php" class="btn btn-primary">Programs</a>
         <div class="span8 offset2">
           <div>
-            <form class="form-horizontal" action="add_into_database.php" method="POST">
-              <legend>Enter Program Details</legend>
+            <form class="form-horizontal" action="feedback.php" method="POST">
+              <legend>Feedback</legend>
               <div class="alert alert-error">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 <strong>Warning!</strong> All fields are NECESSARY!!
               </div>
               <div class="control-group">
-                <label class="control-label" for="programtitle">Program Title</label>
+                <label class="control-label" for="name">Name</label>
                 <div class="controls">
-                  <input class="input-xxlarge" type="text" name="programtitle" id="programtitle" placeholder="Program Title" required>
+                  <input class="input-xxlarge" type="text" name="name" id="name" placeholder="To" required>
                 </div>
               </div>
               <div class="control-group">
-                <label class="control-label" for="programlanguage">Language</label>
+                <label class="control-label" for="message">Message</label>
                 <div class="controls">
-                  <select name="programlanguage" id="programlanguage" onchange="SelectMode(this.value)">
-                  <option>--None--</option>
-                  <option>c_cpp</option>
-                  <option>java</option>
-                  <option>ruby</option>
-                  <option>php</option>
-                  <option>html</option>
-                  <option>css</option>
-                </select>
+                  <textarea class="input-xxlarge" name="message" id="message" placeholder="Message" rows="15" required></textarea>
                 </div>
-              </div>
-
-              <div class="control-group">
-                <label class="control-label" >Program</label>
-                <div class="controls" id="editor" ></div>
-                <input type="hidden" id="program" name="program">
               </div>
               <div class="control-group">
                 <div class="controls" >
